@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kalkulator</string>
+    <string-array name="spnOperator">
+        <item>Tambah (+)</item>
+        <item>Kurang (-)</item>
+        <item>Kali (x)</item>
+        <item>Bagi (/)</item>
+    </string-array>
+</resources>

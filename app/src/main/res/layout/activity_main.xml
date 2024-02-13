@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1ECE5"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="🔐Login"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:textColor="#24302C"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/fieldOne"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:background="#C9D6D3"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="60dp"
+        android:hint="Username"
+        ></EditText>
+
+
+    <EditText
+        android:id="@+id/fieldTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintTop_toBottomOf="@id/fieldOne"
+        android:layout_width="374dp"
+        android:layout_height="45dp"
+        android:background="#C9D6D3"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        ></EditText>
+
+    <CheckBox
+        android:id="@+id/checkPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fieldTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Sembunyikan Password"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="20dp"
+        android:textColor="#263A3A"
+        android:textAlignment="center"
+        ></CheckBox>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkPassword"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:backgroundTint="#FFDE42"
+        android:textSize="20dp"
+        android:textColor="#3C361F">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

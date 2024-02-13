@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1ECE5">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="🧮Kalkulator"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:textColor="#24302C"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/fieldOne"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:background="#C9D6D3"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="80dp"
+        android:hint="Masukan angka pertama"
+        android:inputType="number"
+        ></EditText>
+
+    <Spinner
+        android:id="@+id/drpdwn_operators"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#83A6FF"
+        android:entries="@array/spnOperator"
+        android:fontFamily="@font/fredoka_one"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldOne"></Spinner>
+
+    <EditText
+        android:id="@+id/fieldTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintTop_toBottomOf="@id/drpdwn_operators"
+        android:layout_width="374dp"
+        android:layout_height="45dp"
+        android:background="#C9D6D3"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:hint="Masukan angka kedua"
+        android:inputType="number"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/txt_resulttitle"
+        android:fontFamily="@font/fredoka_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Result:"
+        android:textAlignment="center"
+        android:textColor="#38392C"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/fieldTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txt_resultnumber"></TextView>
+
+    <TextView
+        android:id="@+id/txt_resultnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:background="@color/white"
+        android:fontFamily="@font/fredoka_one"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#38392C"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_resultnumber"
+        android:layout_marginTop="30dp"
+        android:text="Calculate!"
+        android:backgroundTint="#FFDE42"
+        android:textSize="20dp"
+        android:textColor="#3C361F">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
