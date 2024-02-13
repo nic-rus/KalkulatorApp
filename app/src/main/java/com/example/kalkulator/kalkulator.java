@@ -49,7 +49,7 @@ public class kalkulator extends AppCompatActivity {
                         case "Kurang (-)":
                             Result = Integer.toString(Integer.parseInt(FieldOne.getText().toString()) - Integer.parseInt(FieldTwo.getText().toString()));
                             break;
-                        case "Kali (x)":
+                        case "Kali (x) B":
                             Result = Integer.toString(Integer.parseInt(FieldOne.getText().toString()) * Integer.parseInt(FieldTwo.getText().toString()));
                             break;
                         case "Bagi (/)":
